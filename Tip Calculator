@@ -1,0 +1,15 @@
+/// Tip Calculator Fxn ///
+
+// Tip calculator exercise that I coded for my JavaSCript course
+// Prompt asked to create a tip calculator that for dinner bills between $50 and $300
+// The tip is 15% and for any bill outside of those bounds the tip is 20%
+
+const calcTip = function(bill) {
+if (bill >= 50 && bill <= 300) {
+        console.log(`Tip is $${(bill * .15) + bill}`);
+    } else {
+        console.log(`Tip is $${(bill * .2) + bill}`);
+    }}
+
+const bills = [125, 555, 44]; 
+const totBills = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
