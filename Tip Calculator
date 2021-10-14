@@ -1,4 +1,4 @@
-/// Tip Calculator Fxn ///
+/// --- Tip Calculator Fxn --- JS ///
 
 // Tip calculator exercise that I coded for my JavaSCript course
 // Prompt asked to create a tip calculator that for dinner bills between $50 and $300
@@ -13,3 +13,17 @@ if (bill >= 50 && bill <= 300) {
 
 const bills = [125, 555, 44]; 
 const totBills = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+
+// Another way to code this exercise...
+
+const calcTip = function (bill) {
+    return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2; // Tip calc fxn
+} 
+
+const bills = [125, 555, 44]; // Plug in any values for your food bill
+
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])]; //calc tips
+const totals = [bills [0] + tips[0], bills[1] + tips[1],
+    bills[2] + tips[2]]; // calc you tot. bill
+
+console.log(bills, tips, totals); // log it to the console
